@@ -1,0 +1,59 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page-layout {
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  padding: 20px;
+  background: #eeeeee;
+}
+
+.sidebar ul {
+  padding-left: 20px;
+}
+
+#register {
+  flex: 1;
+  padding: 20px;
+}
+
+#register form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+}
+
+#register form div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#register input {
+  padding: 10px;
+}
+
+#register button {
+  padding: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: auto;
+  }
+}
